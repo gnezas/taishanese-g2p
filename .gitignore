@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# generated output — never commit audio or archives
+out/
+*.mp3
+*.wav
+*.zip
+*.probe.json
+*.pairs.json
+
+# large source material: fetch per the README, don't commit
+sources/
+corpus/dli/
+corpus/dli-github/audio/
+
+.DS_Store
+.idea/
+.vscode/
