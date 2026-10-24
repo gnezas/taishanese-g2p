@@ -66,6 +66,14 @@ main lexicon keeps the `ⁿd`/`ᵑɡ`/`ᵐb` convention for internal consistency
 泛粵大典 readings live separately in `data/hoisan_taishan_jyutdict.tsv`. **If you train
 a model, pick one convention deliberately** rather than inheriting the mix.
 
+**Tone notation is unified.** 泛粵大典 originally supplies pitch-level digits
+(`kuɔt11`, `ʔiɐŋ32`) while every other source uses contour bars (`˩`, `˧˨`). The 12
+merged rows that came from 泛粵大典 were normalised to contour bars so a single parser
+can read the whole file; the digits survive verbatim in
+`data/hoisan_taishan_jyutdict.tsv`. The mapping is one-to-one (Chao levels 1–5 →
+`˩˨˧˦˥`, a level tone written as one bar), and it was verified against 四, which
+泛粵大典 records as `ɬei33` and the merged lexicon stores as `ɬei˧`.
+
 ## Sub-dialect mixing
 
 Wiktionary is Taicheng. Gene Chin and Stephen Li cover their own localities. 泛粵大典
